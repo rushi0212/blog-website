@@ -23,6 +23,54 @@
     <p>Read the latest articles on technology, lifestyle, and creativity.</p>
   </section>
 
+  <!-- CodeSprint Section -->
+  <section class="codesprint" id="codesprint">
+    <div class="codesprint-header">
+      <h2>CodeSprint</h2>
+      <p>Monkeytype-style practice for developers using real code from official GitHub repositories.</p>
+    </div>
+    <div class="codesprint-card">
+      <div class="codesprint-controls">
+        <div class="control-group">
+          <label for="languageSelect">Language</label>
+          <select id="languageSelect"></select>
+        </div>
+        <div class="control-group">
+          <label for="snippetSelect">Snippet</label>
+          <select id="snippetSelect"></select>
+        </div>
+        <button id="loadSnippet" class="primary">Load Snippet</button>
+        <button id="resetSprint" class="secondary">Reset</button>
+      </div>
+      <div class="codesprint-meta">
+        <p><span>Repository:</span> <span id="repoName">—</span></p>
+        <p><span>File:</span> <span id="filePath">—</span></p>
+      </div>
+      <div class="codesprint-panel">
+        <pre id="codeDisplay" class="code-display" aria-live="polite"></pre>
+        <textarea id="codeInput" placeholder="Start typing here..." spellcheck="false"></textarea>
+      </div>
+      <div class="codesprint-stats">
+        <div class="stat">
+          <span>WPM</span>
+          <strong id="wpmValue">0</strong>
+        </div>
+        <div class="stat">
+          <span>Accuracy</span>
+          <strong id="accuracyValue">100%</strong>
+        </div>
+        <div class="stat">
+          <span>Progress</span>
+          <strong id="progressValue">0%</strong>
+        </div>
+        <div class="stat">
+          <span>Time</span>
+          <strong id="timeValue">0s</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Blog Section -->
   <section class="blog-list">
     
